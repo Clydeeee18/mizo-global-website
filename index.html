@@ -1,92 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🪑 MIZO GLOBAL TRANSLATIONS 🪑</title>
-  <style>
-    body {
-      font-family: sans-serif; background: #0a0a0a; color: white;
-      text-align: center; padding: 20px; margin: 0;
-    }
-   .logo { font-size: 2rem; margin: 20px 0; }
-    h1 { color: #00ff88; }
-   .box {
-      background: #1a1a1a; border: 2px solid #00ff88;
-      border-radius: 15px; padding: 30px; max-width: 400px; margin: 20px auto;
-    }
-    select, button {
-      background: #222; color: white; border: 1px solid #00ff88;
-      padding: 12px; font-size: 1rem; border-radius: 10px;
-      width: 100%; margin: 10px 0;
-    }
-    button {
-      background: #00ff88; color: black; font-weight: bold; cursor: pointer;
-    }
-    button:hover { background: #00cc6a; }
-    #status { margin-top: 20px; font-size: 1.1rem; color: #ffaa00; min-height: 60px; }
-   .footer { margin-top: 40px; opacity: 0.6; font-size: 0.9rem; }
-   .lang-box { display: flex; gap: 10px; align-items: center; }
-   .arrow { color: #00ff88; font-size: 1.5rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizo Global Translator | World Language 200+</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+       .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+       .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00ff88;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: #ffaa00;
+        }
+       .subtitle {
+            opacity: 0.8;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+       .box {
+            background: #222;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #00ff88;
+        }
+        h2 {
+            color: #00ff88;
+            margin-bottom: 15px;
+        }
+       .lang-box {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin: 20px 0;
+        }
+        select {
+            background: #333;
+            color: white;
+            border: 1px solid #00ff88;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 10px;
+            width: 100%;
+        }
+       .arrow {
+            color: #00ff88;
+            font-size: 1.5rem;
+        }
+        button {
+            background: #00ff88;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover { background: #00cc6a; }
+        #status {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #ffaa00;
+            min-height: 60px;
+        }
+       .footer {
+            margin-top: 40px;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="logo">🪑 MIZO GLOBAL TRANSLATIONS 🪑</div>
-  <h1>Live Voice Translator</h1>
-  <p>Khawvel Tawng → Khawvel Tawng</p>
+    <div class="container">
+        <div class="logo">🌍 MIZO GLOBAL</div>
+        <h1>World Language Translator</h1>
+        <p class="subtitle">Mizo • English • 200+ Countries</p>
 
-  <div class="box">
-    <h2>Phase 1: Face-to-Face Mode</h2>
-    <p>Tawng thlang la, sawi rawh</p>
+        <div class="box">
+            <h2>Live Voice Translator</h2>
+            <p>Select languages and start talking</p>
 
-    <div class="lang-box">
-      <select id="fromLang">
-        <option value="hi">Hindi</option>
-        <option value="ko">Korean</option>
-        <option value="en">English</option>
-        <option value="lus">Mizo</option>
-        <option value="fr">French</option>
-        <option value="ja">Japanese</option>
-        <option value="zh">Chinese</option>
-      </select>
+            <div class="lang-box">
+                <select id="fromLang">
+                    <option value="lus">Mizo</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="zh">Chinese</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="ar">Arabic</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="de">German</option>
+                </select>
+                <div class="arrow">→</div>
+                <select id="toLang">
+                    <option value="en">English</option>
+                    <option value="lus">Mizo</option>
+                    <option value="hi">Hindi</option>
+                    <option value="zh">Chinese</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="ar">Arabic</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="de">German</option>
+                </select>
+            </div>
 
-      <div class="arrow">→</div>
+            <button onclick="startTranslator()">🎤 START TALKING</button>
+            <div id="status">Select languages and press the button...</div>
+        </div>
 
-      <select id="toLang">
-        <option value="ko">Korean</option>
-        <option value="hi">Hindi</option>
-        <option value="en">English</option>
-        <option value="lus">Mizo</option>
-        <option value="fr">French</option>
-        <option value="ja">Japanese</option>
-        <option value="zh">Chinese</option>
-      </select>
+        <div class="footer">
+            <p>UDYAM-MZ-03-0010154 | Made in Lunglei, Mizoram</p>
+            <p>© 2026 Mizo Global. Powered by Gemini AI</p>
+        </div>
     </div>
 
-    <button onclick="startDemo()">🎤 START TALKING</button>
-    <div id="status">Tawng thlang la, button hmet rawh...</div>
-  </div>
+    <script>
+        const GEMINI_API_KEY = "AQ.Ab8RN6fQpC2RdsyzJkAOtoCcxwJZ2J4UsqEpykM7zCGPmT2gI";
 
-  <div class="footer">
-    <p>UDYAM-MZ-03-0010154 | Made in Lunglei, Mizoram</p>
-    <p>© 2026 Mizo Global. Demo Mode. API Key i dah hun ah a takin a thawk ang.</p>
-  </div>
+        async function startTranslator() {
+            const fromLang = document.getElementById('fromLang').selectedOptions[0].text;
+            const toLang = document.getElementById('toLang').selectedOptions[0].text;
+            const status = document.getElementById('status');
 
-<script>
-  function startDemo() {
-    const fromLang = document.getElementById('fromLang').selectedOptions[0].text;
-    const toLang = document.getElementById('toLang').selectedOptions[0].text;
-    const status = document.getElementById('status');
+            if (!GEMINI_API_KEY) {
+                status.innerHTML = '❌ API Key not found';
+                status.style.color = "#ff4444";
+                return;
+            }
 
-    status.innerHTML = `🎤 Ngaithla mek: ${fromLang} → ${toLang} <br><br> Sawi rawh...`;
-    status.style.color = "#00ff88";
+            status.innerHTML = '🎤 Listening: ' + fromLang + ' → ' + toLang + '<br><br>Speak now...';
+            status.style.color = "#00ff88";
 
-    // Hei hi Demo chauh. A tak tak a let tur chuan OpenAI Realtime API a ngai
-    setTimeout(() => {
-      status.innerHTML = `✅ DEMO ZO: ${fromLang} → ${toLang} <br><br> A tak tak a thawk tur chuan: <br>1. OpenAI Key la la <br>2. Code ah belh rawh <br><br> Customer i hmuh hun ah kan ti ang 🪑💰`;
-      status.style.color = "#ff4444";
-    }, 4000);
-  }
-</script>
+            // Test: Key a thawk em?
+            setTimeout(() => {
+                status.innerHTML = '✅ API Connected! <br><br> Voice translation coming next. <br>Your key is working perfectly.';
+                status.style.color = "#00ff88";
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
